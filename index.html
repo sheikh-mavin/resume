@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Mavin</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="./css/style.css"
+    />
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="fullpage">
+      <section id="home" class="home">
+        <!-- <div class="image"></div> -->
+        <div>
+          <h1>
+            Hello,  I'm<br />
+            <span class="dark-grey">Sheikh Mavin</span><br />
+            I build things for the web.
+          </h1>
+          <button class="contactme">Contact Me</button>
+        </div>
+      </section>
+      <section id="about" class="about">
+        <div>
+          <h1>About Me</h1>
+          <p class="about-desc">
+            Innovative, task-driven professional with 4 years of experience in
+            developing web application using different tech stacks. Highly
+            skilled at collaborating with team members to ship products within
+            the deadline. Experience in Agile Software Development projects.
+            Possess good troubleshooting and debugging skills. Currently, I work
+            at
+            <a class="neon">To The New</a> as
+           Senior Software Developer
+            <br /><br />
+          </p>
+        </div>
+      </section>
+      <section id="experience" class="experience">
+        <h1>Where I’ve Worked</h1>
+        <div class="experience-content">
+          <div class="company-list">
+            <div class="company active" data-company="ttn">To The New</div>
+            <div class="company" data-company="w3villa">W3villa</div>
+            <div class="company" data-company="emvento">Emvento</div>
+          </div>
+          <div id="ttn" class="experience-description active">
+            <div class="designation">
+              Senior Software Engineer
+              <span class="neon"> @ <a>To The new</a></span>
+            </div>
+            <div class="range">Apr, 2022 - Present</div>
+            <div class="description">
+              <ul>
+                <li>Created Back End application in Sails.js and Express</li>
+                <li>Created Front End applications in Angular and React.js</li>
+                <li>Responsible for client requirement analysis</li>
+                <li>Responsible for code reviews</li>
+                <li>Responsible for production debugging</li>
+                <li>Mentor junior members of the team</li>
+              </ul>
+            </div>
+          </div>
+          <div id="w3villa" class="experience-description">
+            <div class="designation">
+              Software Engineer
+              <span class="neon"> @ <a>W3villa Technologies</a></span>
+            </div>
+            <div class="range">Mar, 2020 - Apr, 2022</div>
+            <div class="description">
+              <ul>
+                <li>Created Back End application in Sails.js and Express</li>
+                <li>Created Front End applications in Angular and React.js</li>
+                <li>Responsible for client requirement analysis</li>
+                <li>Responsible for code reviews</li>
+                <li>Responsible for production debugging</li>
+                <li>Mentor junior members of the team</li>
+              </ul>
+            </div>
+          </div>
+          <div id="emvento" class="experience-description">
+            <div class="designation">
+              Software Engineer
+              <span class="neon"> @ <a>Emvento Technologies</a></span>
+            </div>
+            <div class="range">Jan, 2018 - Mar, 2020</div>
+            <div class="description">
+              <ul>
+                <li>Created Back-End application in Meteor.js</li>
+                <li>Created Front-End application in Vue.js and Nuxt.</li>
+                <li>Created server-less application in Firestore</li>
+                <li>
+                  Developed websites primarily using HTML, CSS, Sass,
+                  JavaScript, and jQuery
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contact" class="contact">
+        <div>
+          <h1>Contact Me</h1>
+          <p>Let's build something spectacular.</p>
+          <form>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Name*"
+              required
+            />
+
+            <input
+              type="text"
+              name="email"
+              id="email"
+              placeholder="Email*"
+              required
+            />
+            <input
+              type="text"
+              name="subject"
+              id="subject"
+              placeholder="Subject*"
+              required
+            />
+            <textarea
+              name="message"
+              id="message"
+              placeholder="Message"
+              rows="10"
+            ></textarea>
+
+            <button class="contactme">Submit</button>
+          </form>
+        </div>
+      </section>
+    </div>
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

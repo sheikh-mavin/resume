@@ -1,0 +1,251 @@
+@font-face {
+  font-family: "Michroma";
+  src: url("../assets/fonts/Michroma-Regular.ttf");
+}
+:root {
+  --blackish: #202020;
+  --darkGrey: #3f3f3f;
+  --lightGrey: #c5c5c5;
+  --mediumGrey: #4e4e4e;
+  --neon: #08fdd8;
+  --white: #ffffff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  color: var(--lightGrey);
+  background-color: var(--blackish);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Michroma;
+}
+
+a {
+  cursor: pointer;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  top: 20px;
+  background-color: transparent;
+}
+
+nav > ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: right;
+  padding: 20px;
+  margin: 0px;
+  list-style: none;
+}
+nav > ul > li {
+  padding-right: 50px;
+}
+
+nav > ul > li > a {
+  color: var(--lightGrey);
+  text-decoration: none;
+}
+
+nav > ul > li > a:hover {
+  color: var(--neon);
+}
+
+h1 {
+  font-size: 4rem;
+  color: var(--lightGrey);
+  font-weight: 900;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+.fullpage {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+section {
+  height: 100vh; /* full screen height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  scroll-snap-align: start;
+  padding-left: 50px;
+  padding-right: 50px;
+  max-width: 2000px;
+}
+
+.medium-grey {
+  color: var(--lightGrey) !important;
+}
+
+.dark-grey {
+  color: var(--darkGrey) !important;
+}
+
+.image {
+  height: 600px;
+  width: 600px;
+  background-image: url("../assets/images/mavin.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: luminosity;
+  background-color: var(--blackish);
+  /* border-radius: 40%; */
+}
+.home {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  background: url("../assets/images/home.png") no-repeat right center fixed;
+  background-size: 800px 700px;
+  background-blend-mode: luminosity;
+  background-color: var(--blackish);
+
+  /* background-attachment: fixed; */
+}
+.contactme {
+  margin-top: 10px;
+  padding: 12px;
+  border: 1px solid var(--neon);
+  background-color: transparent;
+  color: var(--neon);
+  font-size: 20px;
+}
+
+.about {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  background: url("../assets/images/mavin.png") no-repeat left bottom fixed;
+  background-size: 700px 80%;
+  background-blend-mode: luminosity;
+  background-color: var(--mediumGrey);
+}
+
+.neon {
+  color: var(--neon);
+}
+
+.about-desc {
+  width: 1024px;
+}
+
+.company-list {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+}
+
+.experience {
+  display: flex;
+  flex-direction: column;
+}
+
+.experience-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 100px;
+  height: 300px;
+}
+
+.company {
+  border-left: 2px solid var(--lightGrey);
+  padding: 20px;
+  cursor: pointer;
+}
+
+.company:hover {
+  background-color: var(--darkGrey);
+}
+
+.company.active {
+  border-left: 2px solid var(--neon);
+  color: var(--neon);
+}
+
+.experience-description {
+  margin-left: 100px;
+  display: none;
+  max-width: 500px;
+  position: relative;
+}
+
+.experience-description.active {
+  display: block;
+}
+
+.designation {
+  font-weight: bolder;
+}
+.range {
+  font-size: 0.6rem;
+  margin-top: 10px;
+}
+
+.experience-description ul {
+  padding-top: 12px;
+  list-style: none;
+}
+
+.experience-description li {
+  padding: 12px;
+  font-size: 1rem;
+}
+
+.experience-description li::before {
+  content: "▹  ";
+  left: 0px;
+  color: var(--neon);
+  position: absolute;
+}
+
+
+.contact {
+  display: flex;
+  flex-direction: row;
+  background-color: var(--mediumGrey);
+}
+
+input,
+textarea {
+  padding: 20px;
+  background-color: var(--darkGrey);
+  color: var(--lightGrey);  
+  border: none;
+  font-weight: bolder;
+  width: 100%;
+  margin: 10px;
+}
+
+input:focus, textarea:focus {
+  outline:none;
+  border-bottom: 2px solid var(--neon);
+}
+
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+}
